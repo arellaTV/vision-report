@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report>
+  <Parameters>
+    <Parameter>
+      <Name>P_SampleType</Name>
+      <Caption> TEST TYPE: </Caption>
+      <Categories>
+        <Category>SampleInformation</Category>
+      </Categories>
+      <Values>
+        <Value>FRESH</Value>
+      </Values>
+      <Color/>
+      <Range/>
+      <Status/>
+    </Parameter>
+    <Parameter>
+      <Name>P_WBCConc</Name>
+      <Caption>WBC CONC. (M/ml): </Caption>
+      <Categories>
+        <Category>TestResults</Category>
+      </Categories>
+      <Values>
+        <Value> &lt;1</Value>
+      </Values>
+      <Color/>
+      <Range/>
+      <Status/>
+    </Parameter>
+    <Parameter>
+      <Name>P_Normal</Name>
+      <Caption>NORMAL (%): </Caption>
+      <Categories>
+        <Category>OtherCounterData</Category>
+        <Category>MorphData</Category>
+      </Categories>
+      <Values>
+        <Value>100</Value>
+      </Values>
+      <Color>32768</Color>
+      <Range/>
+      <Status/>
+    </Parameter>
+  </Parameters>
+  <Images>
+    <Image>
+      <ImageDate>6/9/2016 4:35:13 PM</ImageDate>
+      <ImageName>09_06_16_04_35_13_865_2</ImageName>
+      <ImageCategory>CaptureImages</ImageCategory>
+    </Image>
+    <Image>
+    <ImageDate>6/9/2016 4:35:14 PM</ImageDate>
+    <ImageName>09_06_16_04_35_14_060_3</ImageName>
+    <ImageCategory>CaptureImages</ImageCategory>
+    </Image>
+  </Images>
+  <Settings>
+    <SetPar>
+      <SetName>Vid_CRadius</SetName>
+      <SetValue>20</SetValue>
+    </SetPar>
+    <SetPar>
+      <SetName>Vid_CLWidth</SetName>
+      <SetValue>3</SetValue>
+    </SetPar>
+  </Settings>
+</Report>
