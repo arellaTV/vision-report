@@ -1,13 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import formatCaptions from './actions';
 
 const Table = (props) => {
-  console.log(true);
   return (
-    <div>
-      <h3>{props.category}</h3>
+    <div className="card-panel">
+      <h5>{props.category}</h5>
       {props.parameters.map(parameter =>
-        <p key={parameter.Caption}>{parameter.Caption} {parameter.Values.Value}</p>,
+        <div className="b-parameter" key={parameter.Caption}>
+          <div className="b-parameter__caption">{formatCaptions(parameter.Caption)}</div>
+          <div className="b-parameter__value">{parameter.Values.Value}</div>
+        </div>,
       )}
     </div>
   );

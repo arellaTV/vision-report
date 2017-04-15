@@ -1,0 +1,24 @@
+body {
+  font-size: 0.9em;
+}
+
+.b-parameter {
+  color: #292929;
+}
+
+.b-parameter__caption {
+  display: inline-block;
+  font-weight: 400;
+  width: 50%;
+}
+
+.b-parameter__value {
+  display: inline-block;
+  font-weight: 300;
+  word-wrap: break-word;
+  width: 50%;
+}
+
+.card-panel {
+  height: 100%;
+}

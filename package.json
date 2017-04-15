@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack -d --watch",
     "native": "electron native/index.js",
-    "start": "nodemon server/index.js"
+    "start": "npm run build & npm run native"
   },
   "repository": {
     "type": "git",
@@ -26,10 +26,13 @@
     "babel-preset-react": "^6.24.1",
     "electron": "^1.6.2",
     "express": "^4.15.2",
+    "jquery": "^3.2.1",
+    "materialize-css": "^0.98.2",
     "nodemon": "^1.11.0",
     "prop-types": "^15.5.8",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-grid-layout": "^0.14.4",
     "webpack": "^2.4.1",
     "xml2js": "^0.4.17"
   },
