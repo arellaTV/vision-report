@@ -6,6 +6,16 @@
         "import"
     ],
     "rules": {
-      "no-console": 0
+      "no-console": 0,
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+    },
+    "globals": {
+      "document": 0,
+      "fetch": 0,
+      "describe": 0,
+      "it": 0,
+      "before": 0,
+      "window": 0,
+      "fetch": 0
     }
 }

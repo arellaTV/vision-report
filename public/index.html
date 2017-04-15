@@ -5,10 +5,10 @@
     <title></title>
   </head>
   <body>
-<script>
-fetch('/report-data')
-  .then(response => response.json())
-  .then(report => console.log(report));
-</script>
+    <div id="app" />
+    <script>
+      const convertData = require('./../native/helpers/dataConverter.js');
+    </script>
+    <script src="dist/bundle.js"></script>
   </body>
 </html>
