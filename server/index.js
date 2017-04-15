@@ -1,16 +1,23 @@
 const fs = require('fs');
-const parseString = require('xml2js').parseString;
-const util = require('util');
+const xml2js = require('xml2js');
+const express = require('express');
 
-const xml = "<root>Hello xml2js!</root>"
+const app = express();
+const parser = new xml2js.Parser({ explicitArray: false });
 
-parseString(xml, (err, result) => {
-  console.log(result);
-});
+let reportData;
 
-fs.readFile(`${__dirname}/data/sample.xml`, (fsError, data) => {
-  parseString(data, (parseError, result) => {
-    console.log(util.inspect(result, false, null));
-    console.log('done!');
+fs.readFile(`${__dirname}/data/ReportData.xml`, (fsError, data) => {
+  parser.parseString(data, (parseError, result) => {
+    reportData = result;
   });
 });
+
+app.use('/', express.static(`${__dirname}/../public`));
+
+app.get('/report-data', (req, res) => {
+  console.log(reportData);
+  res.json(reportData);
+});
+
+app.listen(1337, console.log('listening!'));

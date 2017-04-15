@@ -5,5 +5,10 @@
     <title></title>
   </head>
   <body>
+<script>
+fetch('/report-data')
+  .then(response => response.json())
+  .then(report => console.log(report));
+</script>
   </body>
 </html>
